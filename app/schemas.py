@@ -2,4 +2,4 @@ from pydantic import BaseModel
 
 class MovieRequest(BaseModel):
     title: str
-    top_n = 5
+    top_n:int = 5

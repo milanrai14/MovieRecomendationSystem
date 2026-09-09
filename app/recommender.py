@@ -3,7 +3,7 @@ from model_loader import movies
 def get_recommendations(title: str, top_n: int=5):
     movie = movies[movies["title"].str.lower() == title.lower()]
 
-    if movie.empty():
+    if movie.empty:
         return None
 
     cluster = movie.iloc[0]['dbscan_cluster']
