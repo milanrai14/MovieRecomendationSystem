@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0f172a;
+}
+
+.app {
+  min-height: 100vh;
+  background: linear-gradient(rgba(15,23,42,.92), rgba(30,41,59,.92)),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.container {
+  width: 100%;
+  max-width: 750px;
+  background: rgba(17,24,39,.88);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 20px;
+  padding: 35px;
+  color: white;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.icon {
+  color: #f59e0b;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: white;
+}
+
+.header p {
+  color: #cbd5e1;
+}
+
+.search-box {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #1e293b;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.input-group input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  margin-left: 10px;
+  outline: none;
+}
+
+.number {
+  width: 70px;
+  background: #1e293b;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+button {
+  background: #f59e0b;
+  color: #111827;
+  border: none;
+  border-radius: 10px;
+  padding: 0 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button:hover {
+  background: #d97706;
+}
+
+.error {
+  margin-top: 20px;
+  background: rgba(239,68,68,.15);
+  border: 1px solid #ef4444;
+  color: #fecaca;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.results {
+  margin-top: 30px;
+}
+
+.results h2 {
+  margin-bottom: 18px;
+}
+
+.results span {
+  color: #fbbf24;
+}
+
+.movie-card {
+  display: flex;
+  align-items: center;
+  background: #1f2937;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 12px;
+  transition: .25s;
+}
+
+.movie-card:hover {
+  transform: translateY(-2px);
+  background: #273449;
+}
+
+.rank {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #f59e0b;
+  color: #111827;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.movie-info {
+  flex: 1;
+}
+
+.movie-info h3 {
+  font-size: 1.05rem;
+}
+
+.movie-info p {
+  color: #9ca3af;
+  font-size: .9rem;
+}
+
+.ticket {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fbbf24;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
